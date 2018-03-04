@@ -32,5 +32,15 @@ public class Arithmetic extends Progression {
 		double value = this.firstValue() + this.commonDifference*(n-1); 
 		return value; 
 	}
+	
+
+
+	@Override
+	public boolean Equals(Progression p2) {
+		if(this.firstValue() == p2.firstValue() && this.nextValue() == p2.nextValue()) {
+			return true;
+		}
+		return false;
+	}
 
 }

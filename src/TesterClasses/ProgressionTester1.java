@@ -56,10 +56,16 @@ public class ProgressionTester1 {
 		//p.nextValue();		
 		p.printAllTerms(20);
 		
-		p2 = new Arithmetic(2,3);
+		p2 = new Arithmetic(2,5);
 		p2.printAllTerms(20);
 		
 		System.out.println("Arithmetic Progressions Are Equal: "+p2.Equals(p));
+		
+		System.out.println("the Sum of p and p2: ");
+		((Arithmetic) p2).add(p).printAllTerms(5);
+		
+		System.out.println("The subtraction of p and p2 are");
+		((Arithmetic) p).subtract(p2).printAllTerms(5);
 
 		
 		
